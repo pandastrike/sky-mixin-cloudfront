@@ -1,0 +1,51 @@
+{
+  "name": "sky-mixin-cloudfront",
+  "version": "0.0.1",
+  "description": "Panda Sky mixin for the AWS service CloudFront.",
+  "main": "build/npm/src/index.js",
+  "files": [
+    "build/npm",
+    "LICENSE"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandastrike/sky-mixin-cloudfront.git"
+  },
+  "keywords": [
+    "AWS",
+    "serverless",
+    "S3",
+    "database"
+  ],
+  "contributors": [
+    {
+      "name": "Dan Yoder",
+      "email": "dan@pandastrike.com"
+    },
+    {
+      "name": "David Harper",
+      "email": "david@pandastrike.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandastrike/sky-mixin-cloudfront/issues"
+  },
+  "homepage": "https://github.com/pandastrike/sky-mixin-cloudfront#readme",
+  "devDependencies": {
+    "panda-9000": "^4.4.0",
+    "panda-builder": "^3.2.1"
+  },
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "commander": "^2.12.2",
+    "panda-interview": "0.0.1",
+    "panda-parchment": "^4.2.0",
+    "panda-quill": "^3.4.5",
+    "panda-river": "^4.4.2",
+    "panda-serialize": "^0.7.0",
+    "panda-template": "^1.1.0",
+    "sundog": "^5.0.0"
+  }
+}

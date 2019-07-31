@@ -1,0 +1,15 @@
+type: object
+additionalProperties: false
+require: [ distributions ]
+properties:
+  distributions:
+    description: >
+      List of CloudFront distributions
+    type: array
+    items: {$ref: "#/definitions/distribution"}
+    minItems: 1
+
+  tags:
+    description: >
+      Optional tags attached to your distributions to make it easier to track and monitor.
+    type: object

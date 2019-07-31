@@ -1,0 +1,9 @@
+distribution:
+  type: object
+  additionalProperties: false
+  required: [hostname]
+  properties:
+    hostname:
+      description: >
+        The hostname the distribution occupies.  Ex: foobar.example.com
+      type: string

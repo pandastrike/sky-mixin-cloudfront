@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Panda Sky Mixin - CloudFront
+{{#if vpc}}
+Parameters:
+  VPC:
+    Type: String
+  Subnets:
+    Type: String
+  AvailabilityZones:
+    Type: String
+  SecurityGroups:
+    Type: String
+  RouteTables:
+    Type: String
+{{/if}}
+
+Resources:
+
+  # TODO: This broken.... There is not currently and endpoint for CloudFront!!
+  {{#if vpc}}
+  Endpoint:
+      Type: "AWS::EC2::VPCEndpoint"
+      Properties:
+        VpcId: !Ref VPC
+        RouteTableIds: !Split [ ",", !Ref RouteTables ]
+        ServiceName: com.amazonaws.{{region}}.dynamodb
+        VpcEndpointType: Gateway
+  {{/if}}
