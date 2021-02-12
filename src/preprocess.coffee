@@ -4,7 +4,7 @@ preprocess = (SDK, global, meta, local) ->
   if meta.vpc
     throw new Error "sky-mixin-cloudfront does not currently support linking a lambda to the CloudFront service through a VPC endpoint"
 
-  {get} = (Sundog SDK).AWS.CloudFront()
+  {get} = Sundog().CloudFront()
 
   arns = []
   for {hostname} in local.distributions

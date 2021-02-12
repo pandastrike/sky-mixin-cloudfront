@@ -8,7 +8,9 @@
     "files",
     "LICENSE"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "p9k build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pandastrike/sky-mixin-cloudfront.git"
@@ -35,11 +37,12 @@
   },
   "homepage": "https://github.com/pandastrike/sky-mixin-cloudfront#readme",
   "devDependencies": {
-    "panda-9000": "^4.4.0",
-    "panda-builder": "^3.2.1"
+    "panda-9000": "^5.0.0",
+    "panda-builder": "^4.0.0"
   },
   "dependencies": {
     "ajv": "^6.10.0",
+    "aws-sdk": "^2.842.0",
     "commander": "^2.12.2",
     "panda-interview": "0.0.1",
     "panda-parchment": "^4.2.0",
@@ -47,6 +50,6 @@
     "panda-river": "^4.4.2",
     "panda-serialize": "^0.7.0",
     "panda-template": "^1.1.0",
-    "sundog": "^5.0.0"
+    "sundog": "6.0.5"
   }
 }
